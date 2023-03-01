@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-hx1u
+  namespace: misjohns-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:30d37e91183be627ee322e2517cd78c999b2a4d2dcca04bff86bbae33246b9ad
+        name: my-java-quarkus
+        resources: {}
+status: {}
